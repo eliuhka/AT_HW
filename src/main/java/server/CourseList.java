@@ -31,7 +31,7 @@ public class CourseList extends HttpServlet {
         response.setContentType("text/html");
         response.setStatus(HttpServletResponse.SC_OK);
         for (Course course : courses){
-            response.getWriter().println("<html><h1>"+ course.courseName + ", " + course.getCourseEAP() + " EAP, starting on " + course.courseStartDate.toLocalDateTime().format(dateTimeFormatter) +  " and finishes " + course.courseEndDate.toLocalDateTime().format(dateTimeFormatter) +"</h1></html>");
+            response.getWriter().println("<html>"+ course.courseName + ", " + course.getCourseEAP() + " EAP, starting on " + course.courseStartDate.toLocalDateTime().format(dateTimeFormatter) +  " and finishes " + course.courseEndDate.toLocalDateTime().format(dateTimeFormatter) +"</html>");
         }
 
     }

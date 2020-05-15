@@ -34,7 +34,7 @@ public class WorkDays extends HttpServlet {
         PrintWriter writer = response.getWriter();
 
         String htmlResponse = "<html>";
-        htmlResponse += "<h1>" + courses[Integer.parseInt(id)].courseName + " kursusel on " + courses[Integer.parseInt(id)].getNumberOfWorkDays() + " tööpäeva</h1>";
+        htmlResponse += courses[Integer.parseInt(id)].courseName + " kursusel on " + courses[Integer.parseInt(id)].getNumberOfWorkDays() + " tööpäeva";
         htmlResponse += "</html>";
 
         writer.println(htmlResponse);
