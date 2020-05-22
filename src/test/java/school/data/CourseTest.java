@@ -40,7 +40,7 @@ public class CourseTest {
         long result = course.getNumberOfWorkDays();
 
         assertEquals(4L, result);
-        //System.out.println(result);
+//        System.out.println(result);
 
     }
 
